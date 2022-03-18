@@ -9,7 +9,13 @@ export class AppComponent {
   tweet = {
     body: 'Here is the body of a tweet...',
     isLiked: true,
-    likesCount: 0
+    likesCount: 10
+  }
+
+  tweet2 = {
+    body: 'Here is the body of a tweet...',
+    isLiked: true,
+    likesCount: 5
   }
 
   onClick(){

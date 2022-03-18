@@ -1,9 +1,14 @@
-<app-like>
-  <div class="heart"
-  (click)="onClick()"
-  [class.heart]
-  [class.a]="tweet.isLiked"
-  [class.b]="!tweet.isLiked"
-  ></div>
-  <h2 class="count">{{ tweet.likesCount }}</h2>
-</app-like>
+<div class="heart"
+(click)="onClick()"
+[class.heart]
+[class.a]="tweet.isLiked"
+[class.b]="!tweet.isLiked"
+></div>
+<h2 class="count">{{ tweet.likesCount }}</h2>
+
+
+
+<app-like2
+  [likesCount]="tweet2.likesCount"
+  [isActive]="tweet2.isLiked"
+></app-like2>
