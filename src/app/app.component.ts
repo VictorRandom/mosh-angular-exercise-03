@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = '03-exercise';
+  tweet = {
+    body: 'Here is the body of a tweet...',
+    isLiked: true,
+    likesCount: 0
+  }
+
+  onClick(){
+    this.tweet.isLiked = !this.tweet.isLiked
+
+    if(!this.tweet.isLiked){
+      this.tweet.likesCount++
+    } else{
+      this.tweet.likesCount--
+    }
+  }
 }
